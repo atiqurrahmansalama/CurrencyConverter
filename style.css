@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     background-color: #EEEEEE;
     color: #5d5d5d;
+    margin: 0;
 }
 
 .container {
@@ -18,8 +19,9 @@ body {
     padding: 3rem;
     border-radius: 1rem;
     min-height: 45vh;
-    width: 40vh;
+    width: 400px; 
     margin: 1rem;
+    box-sizing: border-box;
 }
 
 form {
@@ -106,4 +108,12 @@ form button:hover {
 span {
     text-align: center;
     margin: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; 
+        padding: 2rem; 
+        min-height: auto; 
+    }
 }
